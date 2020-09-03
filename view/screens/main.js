@@ -34,7 +34,7 @@ class MainScreen extends HTMLElement {
   render() {
     this.$budget.innerHTML = `+ ${data.budget}`;
     this.$totalIncome.innerHTML = `+ ${data.totals.inc}`;
-    this.$totalExpense.innerHTML = `+ ${data.totals.exp}`;
+    this.$totalExpense.innerHTML = `- ${data.totals.exp}`;
     this.$expensePercent.innerHTML = `${data.percentage.toFixed(2)}%`;
 
     this.$incomeList.innerHTML = "";
