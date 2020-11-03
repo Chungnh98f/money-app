@@ -62,8 +62,8 @@ const data = storage
 
 setScreen("main");
 
-function setScreen(screenName) {
+const setScreen = (screenName) => {
   document.getElementById("app").innerHTML = screenMap[screenName];
-}
+};
 
 export { setScreen, data, storageKey };
